@@ -1,0 +1,40 @@
+column_name,track_category,data_type,non_null_count,missing_percentage,unique_values_count,description
+student_id,Metadata,str,289161,0.0,289161,Unique student record identifier and origin repository
+source_dataset,Metadata,str,289161,0.0,6,Unique student record identifier and origin repository
+age,Demographics & Socio-economic,int64,289161,0.0,48,"Student demographic profile, special needs flag, and socioeconomic deprivation index (1=affluent to 10=severely deprived)"
+gender_encoded,Demographics & Socio-economic,int64,289161,0.0,3,"Student demographic profile, special needs flag, and socioeconomic deprivation index (1=affluent to 10=severely deprived)"
+disability_flag,Demographics & Socio-economic,int64,289161,0.0,2,"Student demographic profile, special needs flag, and socioeconomic deprivation index (1=affluent to 10=severely deprived)"
+international_student,Demographics & Socio-economic,int64,289161,0.0,2,"Student demographic profile, special needs flag, and socioeconomic deprivation index (1=affluent to 10=severely deprived)"
+first_generation,Demographics & Socio-economic,int64,289161,0.0,2,"Student demographic profile, special needs flag, and socioeconomic deprivation index (1=affluent to 10=severely deprived)"
+socioeconomic_deprivation_index,Demographics & Socio-economic,float64,289161,0.0,18,"Student demographic profile, special needs flag, and socioeconomic deprivation index (1=affluent to 10=severely deprived)"
+scholarship_holder,Financial Status,int64,289161,0.0,2,Financial stability indicators: scholarship recipient status and tuition payment standing
+tuition_up_to_date,Financial Status,int64,289161,0.0,2,Financial stability indicators: scholarship recipient status and tuition payment standing
+admission_grade,Prior Academic History,float64,289161,0.0,1602,Baseline academic capability upon admission and history of prior course repeat attempts
+prior_qualification_grade,Prior Academic History,float64,289161,0.0,1451,Baseline academic capability upon admission and history of prior course repeat attempts
+prior_attempts,Prior Academic History,int64,289161,0.0,7,Baseline academic capability upon admission and history of prior course repeat attempts
+gpa_score_avg,Track 1: Academic Performance,float64,289161,0.0,4781,"Academic course load, weekly study hours, GPA/marks (0-100), grade trajectory, and early assessment signals"
+gpa_score_trend,Track 1: Academic Performance,float64,289161,0.0,16625,"Academic course load, weekly study hours, GPA/marks (0-100), grade trajectory, and early assessment signals"
+pass_rate,Track 1: Academic Performance,float64,289161,0.0,181,"Academic course load, weekly study hours, GPA/marks (0-100), grade trajectory, and early assessment signals"
+first_assessment_score,Track 1: Academic Performance,float64,289161,0.0,9473,"Academic course load, weekly study hours, GPA/marks (0-100), grade trajectory, and early assessment signals"
+study_hours_per_week,Track 1: Academic Performance,float64,289161,0.0,100,"Academic course load, weekly study hours, GPA/marks (0-100), grade trajectory, and early assessment signals"
+study_load,Track 1: Academic Performance,float64,289161,0.0,67,"Academic course load, weekly study hours, GPA/marks (0-100), grade trajectory, and early assessment signals"
+attendance_rate,Track 1: Behavioral Engagement,float64,289161,0.0,2433,"LMS/VLE clicks, active days ratio, engagement decay rate, longest inactive gap, submission lateness, and missed assignment counts"
+lms_engagement_score,Track 1: Behavioral Engagement,float64,289161,0.0,3153,"LMS/VLE clicks, active days ratio, engagement decay rate, longest inactive gap, submission lateness, and missed assignment counts"
+lms_active_days_ratio,Track 1: Behavioral Engagement,float64,289161,0.0,4037,"LMS/VLE clicks, active days ratio, engagement decay rate, longest inactive gap, submission lateness, and missed assignment counts"
+engagement_trend,Track 1: Behavioral Engagement,float64,289161,0.0,14719,"LMS/VLE clicks, active days ratio, engagement decay rate, longest inactive gap, submission lateness, and missed assignment counts"
+longest_inactivity_gap_days,Track 1: Behavioral Engagement,int64,289161,0.0,195,"LMS/VLE clicks, active days ratio, engagement decay rate, longest inactive gap, submission lateness, and missed assignment counts"
+submission_lateness_days,Track 1: Behavioral Engagement,float64,289161,0.0,3012,"LMS/VLE clicks, active days ratio, engagement decay rate, longest inactive gap, submission lateness, and missed assignment counts"
+missed_submissions_count,Track 1: Behavioral Engagement,int64,289161,0.0,21,"LMS/VLE clicks, active days ratio, engagement decay rate, longest inactive gap, submission lateness, and missed assignment counts"
+stress_level_scale,Track 2: Psychological Factors,float64,289161,0.0,13,"Psychological distress markers normalized on 0-10 scale (anxiety, depression, burnout, and overall stress)"
+anxiety_score,Track 2: Psychological Factors,float64,289161,0.0,33,"Psychological distress markers normalized on 0-10 scale (anxiety, depression, burnout, and overall stress)"
+depression_score,Track 2: Psychological Factors,float64,289161,0.0,48,"Psychological distress markers normalized on 0-10 scale (anxiety, depression, burnout, and overall stress)"
+burnout_score,Track 2: Psychological Factors,float64,289161,0.0,61,"Psychological distress markers normalized on 0-10 scale (anxiety, depression, burnout, and overall stress)"
+sleep_hours_per_day,Track 2: Physiological & Social,float64,289161,0.0,61,"Lifestyle and social support factors: daily sleep hours, family/peer support, academic pressure, and activities"
+social_support_score,Track 2: Physiological & Social,float64,289161,0.0,13,"Lifestyle and social support factors: daily sleep hours, family/peer support, academic pressure, and activities"
+academic_pressure_score,Track 2: Physiological & Social,float64,289161,0.0,11,"Lifestyle and social support factors: daily sleep hours, family/peer support, academic pressure, and activities"
+extracurricular_participation,Track 2: Physiological & Social,int64,289161,0.0,2,"Lifestyle and social support factors: daily sleep hours, family/peer support, academic pressure, and activities"
+at_risk,ML Supervised Targets,int64,289161,0.0,2,"Primary targets: binary at_risk, 3-class stress_level, continuous final_score_pct, composite needs_help_score, and triage band"
+stress_level_3class,ML Supervised Targets,int64,289161,0.0,3,"Primary targets: binary at_risk, 3-class stress_level, continuous final_score_pct, composite needs_help_score, and triage band"
+final_score_pct,ML Supervised Targets,float64,289161,0.0,5027,"Primary targets: binary at_risk, 3-class stress_level, continuous final_score_pct, composite needs_help_score, and triage band"
+needs_help_score,ML Supervised Targets,float64,289161,0.0,9947,"Primary targets: binary at_risk, 3-class stress_level, continuous final_score_pct, composite needs_help_score, and triage band"
+needs_help_band,ML Supervised Targets,str,289161,0.0,3,"Primary targets: binary at_risk, 3-class stress_level, continuous final_score_pct, composite needs_help_score, and triage band"
